@@ -28,9 +28,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 composer create-project laravel/laravel learning-laravel-5
+
 cd learning-laravel-5
+
 bower install angular angular-bootstrap angular-resource bootstrap moment
+
 php -S localhost:8888 -t public
+
 .env.example to .env
+
 php artisan make:controller PagesController
+
 php artisan help make:controller

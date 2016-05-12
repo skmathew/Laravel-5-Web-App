@@ -10,10 +10,16 @@ class PagesController extends Controller
 {
     public function about()
     {
-      $data = [];
-      $data['first'] = 'Sherin';
-      $data['last'] = 'Mathew';
+      
+      $people = [
+        'Taylor Otwell', 'Dayle Rees', 'Eric Barnes'
+      ];
+      
+      return view('pages.about', compact('people'));
+    }
+    public function contact()
+    {
 
-      return view('pages.about', $data);
+      return view('pages.contact');
     }
 }

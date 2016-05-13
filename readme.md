@@ -40,3 +40,18 @@ php -S localhost:8888 -t public
 php artisan make:controller PagesController
 
 php artisan help make:controller
+
+change .env to darabase and create a file base database in the storage directory and change the config/database file
+to reflect the changes
+
+php artisan migrate
+
+sqlite3 storage/database.sqlite
+
+.tables
+
+.schema
+
+php artisan migrate:rollback
+
+php artisan migrate

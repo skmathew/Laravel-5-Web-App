@@ -55,3 +55,22 @@ sqlite3 storage/database.sqlite
 php artisan migrate:rollback
 
 php artisan migrate
+
+php artisan help make:migration
+
+php artisan make:migration create_articles_table --create="articles"
+
+php artisan migrate
+
+php artisan make:migration add_excerpt_to_articles_table --table="articles"
+
+sqlite3 storage/database.sqlite
+
+.exit
+
+composer require doctrine/dbal
+
+php artisan migrate:rollback
+
+
+
